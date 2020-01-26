@@ -13,7 +13,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/contacts', require('./routes/contacts'));
 
 if (process.env.NODE_ENV === 'production') {
-  const staticPath = path.resolve(__dirname, 'client', 'build');
+  const staticPath = path.resolve(__dirname, 'public');
   app.use(express.static(staticPath));
 
   app.get('*', (req, res) => {
