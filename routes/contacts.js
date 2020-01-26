@@ -20,9 +20,7 @@ router.get('/', authMiddleware, async (req, res) => {
     });
 
     if (!contacts.length) {
-      return res
-        .status(400)
-        .json({ contacts: [], msg: 'No contacts found for user' });
+      return res.json([]);
     }
 
     res.json(contacts);

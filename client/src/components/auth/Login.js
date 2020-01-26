@@ -61,7 +61,7 @@ const Login = props => {
         <div className="form-group">
           <label htmlFor="password">Password</label>
           <input
-            type="text"
+            type="password"
             name="password"
             value={password}
             onChange={onChange}
@@ -69,7 +69,7 @@ const Login = props => {
         </div>
         <input
           type="submit"
-          value="Register"
+          value="Login"
           className="btn btn-primary btn-block"
         />
       </form>
